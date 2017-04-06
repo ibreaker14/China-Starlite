@@ -1,0 +1,20 @@
+#tempModal{
+	position: fixed;
+	z-index: 1000;
+	top: 90px;
+	background: rgba(144,144,144,0.9);
+	color: white;
+	border-radius: 50px;
+	max-height: 200px;
+	max-width: 500px;
+	right:0;
+	left:0;
+	margin-right:auto;
+	margin-left:auto;
+	cursor: pointer;
+}
+
+#tempModal p{
+	margin-top: 10px;
+	padding: 10px;
+}

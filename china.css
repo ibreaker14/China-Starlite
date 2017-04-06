@@ -1,0 +1,1017 @@
+/**
+*Author: Everyone
+*Description: general stylesheet
+*/
+.bkgrnd{
+	background: url(images/bkgrnd.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+*{
+  font-family: 'Source Sans Pro';
+}
+
+nav{
+	z-index: 4;
+	background: #151515;/* darkish black*/
+	overflow: auto;
+	position: fixed;
+	width: 100%;
+	top:0;
+	clear: both;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  	-webkit-transition: all 0.3s;
+ 	-moz-transition: all 0.3s;
+ 	-ms-transition: all 0.3s;
+ 	-o-transition: all 0.3s;
+ 	transition: all 0.3s;
+}
+
+nav ul li a{
+	background: #151515;/* darkish black*/
+	display: block;
+	text-decoration: none;
+	color: #FFF;
+	 -webkit-transition: all 0.3s;
+ 	-moz-transition: all 0.3s;
+ 	-ms-transition: all 0.3s;
+ 	-o-transition: all 0.3s;
+ 	transition: all 0.3s;
+}
+
+nav ul li.left a{	/*this controls menu logo (logo font is agency FB)*/
+padding:0 0 0.5em 0;
+margin:0 0 0 3em;
+-webkit-transition: all 0.3s;
+ 	-moz-transition: all 0.3s;
+ 	-ms-transition: all 0.3s;
+ 	-o-transition: all 0.3s;
+ 	transition: all 0.3s;
+
+}
+
+nav ul li.left img{
+	-webkit-transition: all 0.3s;
+ 	-moz-transition: all 0.3s;
+ 	-ms-transition: all 0.3s;
+ 	-o-transition: all 0.3s;
+ 	transition: all 0.3s;
+}
+
+nav ul li.right{
+	margin: 4.5em 0 0;
+	-webkit-transition: all 0.3s;
+ 	-moz-transition: all 0.3s;
+ 	-ms-transition: all 0.3s;
+ 	-o-transition: all 0.3s;
+ 	transition: all 0.3s;
+}
+
+nav ul li.right a{						/*this controls how the nav menu links look, excluding the pic*/
+	padding: 1.3em 2em 1.3em 2em;
+	font-weight: bold;
+	color: #FDFDCE;
+	-webkit-transition: all 0.3s;
+ 	-moz-transition: all 0.3s;
+ 	-ms-transition: all 0.3s;
+ 	-o-transition: all 0.3s;
+ 	transition: all 0.3s;
+}
+
+nav ul li a.active{
+	background: #0B0B0B;/*dark black*/
+}
+
+nav ul li.menu{
+	cursor: pointer;
+	text-align: center;
+	padding:0;
+	background: #0B0B0B;
+}
+
+nav ul li.menu img{
+	display: none;
+	padding: 1em;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+.left {
+	float: left;
+	-webkit-transition: all 0.3s;
+ 	-moz-transition: all 0.3s;
+ 	-ms-transition: all 0.3s;
+ 	-o-transition: all 0.3s;
+ 	transition: all 0.3s;
+}
+
+.right {
+	float: right;
+	-webkit-transition: all 0.3s;
+ 	-moz-transition: all 0.3s;
+ 	-ms-transition: all 0.3s;
+ 	-o-transition: all 0.3s;
+ 	transition: all 0.3s;
+
+}
+
+#pad{							/*extra padding at end of nav for decorative putposes*/
+	height: 2em;
+	border-top: 1px solid red;
+	position: relative;
+	top:0;
+	margin-top: 15em;
+	clear:both;
+	-webkit-transition: all 0.3s;
+ 	-moz-transition: all 0.3s;
+ 	-ms-transition: all 0.3s;
+ 	-o-transition: all 0.3s;
+ 	transition: all 0.3s;
+}
+
+#social{
+	margin:-6em 0 0 0;
+	position: absolute;
+	right: 0;
+	-webkit-transition: all 0.3s;
+ 	-moz-transition: all 0.3s;
+ 	-ms-transition: all 0.3s;
+ 	-o-transition: all 0.3s;
+ 	transition: all 0.3s;
+}
+
+ul li.secondary{			/*removes ul bullets from social media links*/
+	list-style: none;
+
+}
+
+ul li img.social{
+	margin-right: 2em;
+	border-radius: 25px;
+	-webkit-transition: all 0.3s;
+ 	-moz-transition: all 0.3s;
+ 	-ms-transition: all 0.3s;
+ 	-o-transition: all 0.3s;
+ 	transition: all 0.3s;
+}
+
+.absolute{
+	position: absolute;
+	right: 0;
+	background: transparent;
+	-webkit-transition: all 0.3s;
+ 	-moz-transition: all 0.3s;
+ 	-ms-transition: all 0.3s;
+ 	-o-transition: all 0.3s;
+ 	transition: all 0.3s;
+}
+
+p.absolute{
+	font-weight: bold;
+	color: #F3EB72;			/*yellow*/
+	padding: 1.5em 1.5em 0 0;
+	-webkit-transition: all 0.3s;
+ 	-moz-transition: all 0.3s;
+ 	-ms-transition: all 0.3s;
+ 	-o-transition: all 0.3s;
+ 	transition: all 0.3s;
+}
+
+#navPlacement{
+	position: relative;
+	height: 17em;
+	-webkit-transition: all 0.2s;
+ 	-moz-transition: all 0.2s;
+ 	-ms-transition: all 0.2s;
+ 	-o-transition: all 0.2s;
+ 	transition: all 0.2s;
+}
+
+nav.smaller li#title::after{
+	content: "CHINA STARLITE";
+	color: #B80606;
+	font-family: "Agency FB";
+	font-weight: bold;
+	font-size: 3em;
+	margin-left: 0.4em;
+	vertical-align: -0.8em;
+	position: relative;
+}
+/*---------------------------------------start shrink------------------------------------*/
+
+nav.smaller{
+position: fixed;
+width: 100%;
+top:0;
+}
+
+nav.smaller ul li.right{
+	margin-top: 0;
+	border-top: none;
+	border-bottom: none;
+}
+
+nav.smaller ul li.right a{
+	padding-bottom: 1.7em;
+	padding-top: 1.7em;
+	border:none;
+}
+
+ul.smaller li img.social{
+	display: none;
+}
+
+nav.smaller #pad{
+	display: none;
+}
+
+nav.smaller ul li.left img{
+	height: 60px;
+}
+
+nav.smaller ul li.left a{
+	padding-left:0;
+	margin-left:1em;
+}
+
+nav.smaller .absolute{
+	display: none;
+}
+/*----------------------------------------stop shrink------------------------------------*/
+.clear{
+	clear: both;
+	width: 100vw;
+	position: relative;
+	float: none;
+}
+
+h3.clear{
+	font-size: 1.5em;
+	margin:0;
+}
+
+#leftBarr{
+	margin: 1em 0 1em 0;
+	width: 69%;
+	float: left;
+}
+
+#leftBarr .floatingBoxLeft{
+	/*border: 3px solid green;*/
+	margin-bottom: 1.5em;
+	width: 95%;
+}
+#leftBarr .stats{
+	box-shadow: 1px 1px 0 rgba(0,0,0,0.2),-1px -1px 0 rgba(0,0,0,0.1);
+}
+
+#leftBarr .floatingBoxLeft h4{
+	/*background: rgba(0,255,6,0.5);*/
+	background:  #DEDEDE; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, #DEDEDE); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, #DEDEDE); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, #DEDEDE); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, #DEDEDE); /* Standard syntax */
+	margin-top:0;
+	padding: 0.5em;
+	margin-bottom:0;
+}
+
+#leftBarr .stats ul li{
+	/*border-bottom: 1px solid black;*/
+	padding: 0.5em;
+	list-style: none;
+}
+
+
+#leftBarr .stats ul li:nth-child(odd){
+	background: #DEDCDC;
+}
+
+#leftBarr .totalpoints{
+	/*background: rgba(0,255,6,0.5);*/
+	background: rgba(0,0,0,0.3);
+}
+
+#leftBarr .totalpoints p{
+	width: 98%;
+	margin-right: auto;
+	margin-left: auto;
+	font-weight: bold;
+	padding: 0.5em;
+}
+
+
+#leftBarr .announcements h4{
+	/*background: rgba(255,0,198,0.5);*/
+	background:  #FF00AE; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, #FF00AE); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, #FF00AE); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, #FF00AE); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, #FF00AE); /* Standard syntax */
+	margin:0;
+	padding: 0.5em 0 0.5em 0.5em;
+}
+
+#leftBarr .announcements{
+	border: 3px solid #FF00D2;
+	overflow: auto;
+	width: 95%;
+}
+
+#leftBarr .announcements img{
+	width: 10em;
+	margin: 0 1em 1em 1em;
+	border: 2px solid black;
+}
+
+#leftBarr .announcements p{
+	margin-top: 1.5em;
+}
+
+#rightBarr{
+	margin: 1em 0 1em 0;
+	margin-bottom: 1em;
+	width: 27%;
+	float: right;
+}
+
+.floatingBoxRight{
+	width: 100%;
+	margin-bottom: 1.5em;
+}
+
+.progress{
+	border: 3px solid orange;
+}
+
+
+.progress h3{
+	/*background: rgba(255,192,0,0.5);*/
+	background:  #FFC000; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, #FFC000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, #FFC000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, #FFC000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, #FFC000); /* Standard syntax */
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	text-align: center;
+	margin-top:0;
+}
+
+.progress p{
+	padding: 0 0.5em 0 0.5em;
+	font-weight: 400;
+}
+
+#rightBarr #progressbar{
+	height: 30px !important;
+	width: 90%;
+	margin: 2em auto 0 auto !important;
+	background:#EAEAEA;
+	display: block !important;
+}
+
+#progress{
+	height: 30px !important;
+	width: 1%;
+	background: #02C033;
+	display: block !important;
+	margin-top: 2em;
+	margin-left: 0.2em;
+}
+
+#progressAmount{
+	color: black;
+	padding-top: 0.3em;
+	font-weight: bold;
+
+}
+
+#light{
+	height: 30px;
+	background:  #02C033; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient( #02C033, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #02C033, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient( #02C033, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #02C033, white); /* Standard syntax */
+}
+
+#dealName{
+	padding: 0.3em 0.6em 0 0.6em;
+	font-weight: bold;
+}
+
+.floatingBoxRight.dealBreakdown{
+	border: 3px solid #2846FD;
+}
+
+.floatingBoxRight.dealBreakdown h3{
+	/*background: rgba(40,70,253,0.5);*/
+	background:  #3651F8; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, #3651F8); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, #3651F8); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, #3651F8); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, #3651F8); /* Standard syntax */
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 0.5em;
+	text-align: left;
+	margin-top:0;
+}
+
+.floatingBoxRight.dealBreakdown p{
+	padding: 0 0.5em 0 0.5em;
+	font-weight: 400;
+	margin-bottom: 1em;
+	width: 93% !important;
+}
+
+.floatingBoxRight.dealBreakdown h4{
+	margin:0;
+	padding:0.2em;
+	font-size: 1em;
+	background: rgba(62,80,250,0.2);
+}
+
+.red{
+	color: red;
+	font-weight: bold;
+}
+
+hr{
+	margin:0;
+	padding:0;
+}
+
+#transparent{
+	background: transparent;
+	height: 25em;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#transparent p{
+	font-size: 5em;
+	padding: 1.5em;
+	vertical-align: center;
+	font-weight: bolder;
+	text-align: center;
+	color: white;
+	text-shadow: 2px 0 white;
+}
+
+
+#wrapper{
+width: 100%;
+background: white;
+}
+
+#content{
+	padding-top: 2em;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-bottom: 2em;
+	background: white;
+}
+
+#content p{
+	margin-right:0;
+	margin-left:0;
+	width:100%;
+}
+
+form{
+	display: inline-block;
+}
+
+.formFields{
+	padding-top: 2em;
+	display: inline-block;		/*will not take up whole space, only what is needed*/
+	text-align: center;
+}
+
+.formFields p{
+	display: inline;
+}
+
+.formFields input{
+	height: 2em;
+	border-radius: 2px;
+	margin: 1em 0 1em 0;
+}
+
+.formFields label{
+	font-weight: bold;
+	display: inline-block;
+	width: 8em;
+	text-align: right;
+}
+
+.formFields label[for="registermonth"]{
+	padding-left: 2em;
+}
+
+.formFields input[type=submit], .formFields input[type=reset]{
+	background: rgba(0,0,0,.9);
+	color: white;
+	height: 3em;
+	width: 10em;
+	margin: 0 0.5em 0 0.5em;
+	cursor: pointer;
+	border: 1px solid white;
+	font-weight: bold;
+	font-family: Arial;
+}
+
+
+.formFields button.forgot{
+	border: 3px solid red;
+	background: rgba(0,0,0,.9);
+	color: white;
+	height: 3em;
+	width: 10em;
+	margin: 0 0.5em 0 0.5em;
+	cursor: pointer;
+	border: 1px solid white;
+	font-weight: bold;
+	font-family: Arial;
+	float: right;
+
+}
+
+
+.formFields .dateSection{
+	font-size: 2em;
+	vertical-align: -0.2em;
+}
+
+label.terms{
+	padding: 0;
+	width: 16em;
+	text-align: center;
+	vertical-align: 0.6em;
+}
+
+#termsandconditions{
+	border: 1px solid rgba(0,0,0,0.5);
+	height: 90vh;
+	width: 30em;
+	margin-right: 10em;
+	position: absolute;
+	/*margin-top: -85vh;*/
+	top: 20em;
+	right: 0;
+	overflow-y: scroll;
+	padding: 0 1em 0 1em;
+}
+
+#termsandconditions h1{
+	font-size: 2em;
+}
+
+#termsandconditions p, #termsandconditions blockquote{
+	text-align: left;
+	display: inline-block;
+}
+
+#termsandconditions ol{
+	text-align: left;
+}
+
+#termsandconditions ol li:nth-child(2){
+	margin-top: 1em;
+}
+
+
+#registerInfo{
+	display: block;
+	float: right;
+	margin-right: 10em;
+	padding: 0 2em 4em 2em;
+	border-left: 1px solid rgba(0,0,0,0.2);
+}
+
+#registerInfo h2{
+	text-align: center;
+}
+
+#registerInfo #benefits{
+	width: 90%;
+	margin: auto;
+}
+
+ #registerInfo #signUp{
+	color: white;
+	cursor: pointer;
+	text-align: center;
+	text-align: center;
+ }
+
+ #registerInfo #signUp a{
+ 	text-decoration: none;
+ 	color: white;
+ 	display: inline-block;
+ 	background: rgba(0,0,0,.9);
+ 	padding: 0.85em 2em 0.85em 2em;
+ 	font-weight: bold;
+ 	font-family: Arial;
+ 	font-size: 0.8em;
+ }
+
+ #registerInfo ul {
+ 	list-style: url(images/list.png);
+ 	margin-left: 2em;
+ }
+
+ .registermsg:not(:empty){
+ 	color: #A80202;
+ 	margin-left: 2em;
+ 	margin-top: 1em;
+ 	position: absolute;
+ 	font-weight: bold;
+ 	background: white;
+ 	z-index: 2;
+ 	padding: 0.5em;
+ 	background: pink;
+ }
+
+.error{
+	font-weight: bold;
+	color: #9F0000;
+}
+
+.msgBox{
+	display: inline;
+	padding: 0.5em;
+}
+
+#modal_background{
+   width: 100%;
+   height: 100%;
+   top: 0px;
+   left: 0px;
+   position: fixed;
+   display: block;
+   background-color: rgba(0,0,0,0.8);
+   z-index: 98;
+   text-align: center;
+   display: none;
+}
+
+#modal_window{
+	display: none;
+	position: fixed;
+	position: relative;
+	z-index: 202;
+	background: white;
+	width: 50%;
+	left: 25%;
+	margin-top: 10em;
+	border: 6px solid black;
+	padding: 0.5em 0.5em 1em 1em;
+	border-radius: 10px;
+	text-align: center;
+}
+
+#modal_window input[type=submit]{
+	background: rgba(0,0,0,.9);
+	color: white;
+	height: 3em;
+	width: 10em;
+	margin: 0 0.5em 0 0.5em;
+	cursor: pointer;
+	border: 1px solid white;
+	font-weight: bold;
+	font-family: Arial;
+}
+
+#modal_window input[type=text]{
+	height: 2em;
+	margin-top: 1em;
+	font-weight: bold;
+}
+
+#modal_close{
+	text-decoration: none;
+	color: #555555;
+	font-weight: bold;
+}
+
+#modal_close:hover{
+	color: red;
+}
+
+#button{
+	background: #151515;
+	display: inline;
+}
+
+#button.right{
+	margin-top: -1.2em;
+}
+
+#button a{
+	color: white;
+	text-decoration: none;
+	padding: 0.4em;
+	background: #151515;
+}
+
+.settings{
+	background: #151515;
+	color: white;
+	font-family: Arial;
+	font-size: 1em;
+	font-weight: bold;
+	vertical-align: center;
+	padding:0.5em;
+	cursor: pointer;
+}
+
+.settings img{
+	padding: 0 0.5em 0 0;
+	margin-bottom: -0.3em;
+	border-right: 1px solid white;
+}
+
+#settingsContent{
+	clear: both;
+	overflow: hidden;
+	padding: 0 1em 0 1em;
+}
+
+#userNameBox form,#passwordBox form,#deactivateBox form{
+	clear: both;
+	padding-top: 2em;
+}
+
+#userNameBox input[type=submit],#passwordBox input[type=submit],#deactivateBox input[type=submit]{
+	background: black;
+	color: white;
+	font-weight: bold;
+	font-family: Arial;
+	font-size: 1em;
+	padding: 0.5em;
+}
+
+#warningmessage{
+	font-weight: bold;
+	color: red;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+#userNameBox label,#passwordBox label,#deactivateBox label{
+	font-weight: bold;
+}
+
+#usernameUnderline{
+	display: inline-block !important;
+	float: left !important;
+	padding-bottom: 0.3em;
+	margin: 0 0.2em 0 0.2em;
+}
+
+#passwordUnderline{
+	display: inline-block !important;
+	float: left !important;
+	padding-bottom: 0.3em;
+	margin: 0 0.2em 0 0.2em;
+}
+
+#deactivateUnderline{
+	display: inline-block !important;
+	float: left !important;
+	padding-bottom: 0.3em;
+	margin: 0 0.2em 0 0.2em;
+}
+
+.profile{
+	background: #151515;
+	color: white;
+	font-family: Arial;
+	font-size: 1em;
+	font-weight: bold;
+	vertical-align: center;
+	padding:0.5em;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+footer{
+	clear: both;
+	text-align: center;
+    background: #151515;
+    color: white;
+    padding-bottom: 1.5em;
+}
+
+footer a{
+	color:#E8E1BB;
+	bottom:0;
+	margin-bottom:0;
+}
+
+footer a:hover{
+	color:white;
+}
+
+footer ul li{
+	list-style: none;
+	display: inline-block;
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+footer ul li a{
+	text-decoration: none;
+	margin: 0 1em 0 1em;
+	color: white;
+}
+
+footer ul li a:hover{
+	font-weight:bold;
+}
+
+
+@font-face{
+	 font-family: agency;
+    src: url("fonts/AGENCYR.TTF");
+}
+
+@font-face{
+	 font-family: agency;
+    src: url("fonts/AGENCYB.TTF");
+    font-weight: bold;
+}
+
+.studentmsg{
+	padding: 0.3em;
+    left:40%;
+	position: absolute;
+	color: white;
+	font-weight:bold;
+	background: rgba(0,0,0,0.3);
+	z-index: 1000;
+}
+
+/*------------------media queries------------------------------------------*/
+@media screen and (max-width: 1293px){
+	#leftBar{
+		height: 45em;
+	}
+	#registerInfo{
+		left:0;
+		margin:0;
+
+	}
+
+}
+
+@media screen and (max-width: 1245px){
+	#leftBar{
+		height: 50em;
+	}
+}
+
+@media screen and (max-width: 1106px){
+	#termsandconditions{
+		float: none;
+		right: initial;
+		position: relative;
+		margin:0;
+		height: 10em;
+		margin-bottom: 1em;
+	}
+}
+
+@media screen and (max-width: 1097px){
+	#transparent p{
+		padding: 1em 0 0 0;
+	}
+	#slider{
+		display: none;
+	}
+
+	#pagination{
+		display: none;
+	}
+
+	nav{
+		float: none;
+		text-align: center;
+		margin: 0 auto 0 auto;
+	}
+
+	nav ul li.left{	/*float none*/
+		float: none;
+	}
+
+	nav ul li.left a{
+		padding:0;
+		margin:0;
+	}
+
+	nav ul li.left img{
+		float: none;
+		text-align: center;
+		margin:0;
+		margin-left:2em;
+	}
+
+	nav ul li.right{/*float: none, inline-block*/
+		float: none;
+		display: inline-block;
+		border: none;
+		margin-top: 2em;
+	}
+
+	nav ul li.right a{
+		border:none;
+	}
+
+	nav .absolute{
+		display:inline-block;
+		position:absolute;
+		margin-top: 205px;
+		text-align: center;
+		right:0;
+		left:0;
+		margin-right: auto;
+		margin-left:auto;
+	}
+
+	#pad{
+		display: none;
+	}
+
+	/*--------------------------------smaller class--------------------------------*/
+	nav.smaller ul li.left img{
+		display:none;
+	}
+
+}
+
+
+@media screen and (max-width: 968px){
+	#registerInfo{
+		border-left: none;
+		border-top: 1px solid rgba(0,0,0,0.2);
+		float: left;
+	}
+}
+
+@media screen and (max-width: 835px){
+	#registerInfo{
+		width: auto;
+		float:none;
+	}
+}
+
+@media screen and (max-width: 740px){
+	nav{
+		position: relative;
+	}
+
+	nav ul li.left img{
+		margin-bottom: 2em;
+
+	}
+
+	nav ul li.right{
+		display: block;
+		margin:0;
+
+	}
+
+	nav ul li.right a{
+		padding: 1em 0;
+	}
+
+	nav .absolute{
+		display: none;
+	}
+
+	nav.smaller{
+		position: relative;
+	}
+
+	nav.smaller ul li.right a{
+		padding: 1em 0;
+	}
+
+	#navPlacement{
+		display: none;
+	}
+
+}
